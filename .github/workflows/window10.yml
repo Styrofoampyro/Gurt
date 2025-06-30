@@ -1,0 +1,12 @@
+name: Windows VPS Demo
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Run PowerShell Command
+        run: |
+          echo "You now have a Windows VM for this job!"
+          # Place any PowerShell commands you want to run here.
